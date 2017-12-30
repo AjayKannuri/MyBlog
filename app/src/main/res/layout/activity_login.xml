@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.hp.imageview.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/loginEmailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="69dp"
+            android:ems="10"
+            android:hint="Email"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"
+            android:layout_alignParentTop="true"
+            android:textColor="#f29191"
+            android:textColorHint="#988f8f"
+            android:padding="5dp"
+            android:background="@drawable/input"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/loginPasswordField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:hint="Password"
+            android:background="@drawable/input"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
+            android:textColor="#f29191"
+            android:textColorHint="#988f8f"
+            android:layout_below="@+id/loginEmailField"
+            android:layout_alignLeft="@+id/loginEmailField"
+            android:layout_alignStart="@+id/loginEmailField"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sign in"
+            android:background="#e6bdbd"
+            android:textColor="#ffffff"
+            android:onClick="loginButton"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/loginPasswordField"
+            android:layout_centerHorizontal="true" />
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/loginBtn"
+            android:layout_centerHorizontal="true" />
+
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="#e6bdbd"
+            android:textColor="#ffffff"
+            android:text="new account"
+            android:onClick="createAccount"
+            tools:text="new account" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.hp.imageview.RegisterActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <EditText
+            android:id="@+id/nameField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:background="@drawable/input"
+            android:textColor="#f29191"
+            android:textColorHint="#988f8f"
+            android:hint="Name........."
+            android:padding="5dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/nameField"
+            android:layout_alignRight="@+id/nameField"
+            android:layout_below="@+id/nameField"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:textColor="#f29191"
+            android:background="@drawable/input"
+            android:textColorHint="#988f8f"
+            android:padding="5dp"
+            android:hint="Email....."
+            android:inputType="textEmailAddress"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/emailField"
+            android:layout_alignRight="@+id/emailField"
+            android:layout_below="@+id/emailField"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:background="@drawable/input"
+            android:padding="5dp"
+            android:hint="Password...."
+            android:textColor="#f29191"
+            android:textColorHint="#988f8f"
+            android:inputType="textPassword"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:background="#d38a8a"
+            android:onClick="startRegister"
+            android:text="sign up"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
